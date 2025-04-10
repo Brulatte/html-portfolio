@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Johanna</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <style>
+        @media (min-width: 426px) and (max-width:768px) {
+            .projects-container {
+                width: 400px;
+                grid-template: repeat(4,auto) / 1fr;
+            }
+
+            .one {
+                order:1;
+            }
+
+            .two {
+                order:2;
+            }
+
+            .three {
+                order:3;
+            }
+
+            .background {
+                height: 1000px;
+            }
+            .pines {
+                top: 28px;
+            }
+            .paragraph {
+                width: 300px;
+                margin-inline: auto;
+            }
+        }
+
+        @media (min-width:376px) and (max-width:425px) {
+            .projects-container {
+                width: 300px;
+                grid-template: repeat(4,auto) / 1fr;
+            }
+            .one {
+                order:1;
+            }
+            .two {
+                order:2;
+            }
+            .three {
+                order: 3;
+            }
+            .background {
+                height: 1000px;
+            }
+            .mist-right {
+                right: 0px;
+                height: 100px;
+            }
+            .mist-left {
+                left:0px;
+                height: 100px;
+            }
+            .pines {
+                top: 30px;
+            }
+            .container {
+                height: 438px;
+            }
+            .paragraph {
+                width: 300px;
+                margin-inline: auto;
+            }
+        }
+        @media (min-width:321px) and (max-width:375px) {
+            .projects-container {
+                width: 300px;
+                grid-template: repeat(4,auto) / 1fr;
+            }
+            .one {
+                order:1;
+            }
+            .two {
+                order:2;
+            }
+            .three {
+                order: 3;
+            }
+            .background {
+                height: 1000px;
+            }
+            .mist-right {
+                right: 0px;
+                height: 100px;
+            }
+            .mist-left {
+                left:0px;
+                height: 100px;
+            }
+            .pines {
+                top: 45px;
+            }
+            .container {
+                height: 438px;
+            }
+            .paragraph {
+                width: 300px;
+                margin-inline: auto;
+            }
+        }
+                @media (max-width:320px) {
+            .projects-container {
+                width: 300px;
+                grid-template: repeat(4,auto) / 1fr;
+            }
+            .one {
+                order:1;
+            }
+            .two {
+                order:2;
+            }
+            .three {
+                order: 3;
+            }
+            .background {
+                height: 1000px;
+            }
+            .mist-right {
+                right: 0px;
+                height: 100px;
+            }
+            .mist-left {
+                left:0px;
+                height: 100px;
+            }
+            .pines {
+                top: -10px;
+            }
+            .container {
+                height: 500px;
+            }
+            .paragraph {
+                width: 300px;
+                margin-inline: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<header class="container">
+    <div class="text">
+        <h1>I'm Johanna</h1>
+        <h2 class="nunito">an aspiring programmer <br> finding joy in learning new concepts.</h2>    
+    </div>
+    <img src="./images/treeline.png" class="transparent pines" alt="Treeline" >
+    <img src="./images/mist.png" alt="mist" class="mist-left" height="200">
+    <img src="./images/mist.png" alt="mist" class="mist-right" height="200">
+</header>
+    
+<main>
+    <div>
+         <h2 class="subheadlines">About Me</h2>
+         <img src="./images/profilepic.png" class="profile-pic margin" alt="profile picture">
+         <p class="nunito margin paragraph">I'm currently working full time in a non tech industry while taking classes in my free time. I enjoy solving hard problems and continuous learning.</p> 
+         <p class="margin">Take a look at my <a href="../Capstone Project 1 - Course Resume/index.html">resume</a>!</p>
+    </div>
+
+    <img src="./images/pinecones2.png" class="margin" height="90" alt="pinecones">
+    
+    <div class="background">
+        <h2 class="projectheadline">Projects</h2>
+
+        <div class="projects-container">
+            <div class="flex">
+                <img src="./images/mondrian.png" alt="mondrian art" height="250px">
+            </div>
+            <div class="flex two">
+                <img src="./images/flag.png" alt="flag" class="flag" height="200">
+            </div>
+            <div class="flex one">
+                <p><span>The Mondrian Project</span><br>The image above is a portrayal of a painting by Mondrian using CSS grid.</p>
+            </div>
+            <div class="flex three">
+                <p><span>The Flag of Laos</span><br>This project's goal was to create the flag of Laos using flexbox. </p>
+            </div>
+        </div>   
+    </div>
+
+    <img src="./images/pinecones2.png" class="margin" height="90" alt="pinecones">
+    
+    <div>
+        <h2 class="subheadlines margin">Contact Me</h2>
+        <p>Email Address: hellothere@you.com</p>
+        <p>Phone Number: (000) 000-0000</p>
+    </div>
+    <img src="./images/pinecones2.png" class="margin" height="90" alt="pinecones">
+</main>
+<footer>
+ <p>© Johanna. All rights reserved.</p>
+</footer>
+</body>
+</html>
